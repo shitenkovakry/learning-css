@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Example</title>
+    <style>
+      a:active {
+        color: red;
+      }
+
+      a:hover {
+        text-decoration: wavy;
+        color: blue;
+        background-color: yellow;
+      }
+
+      input:focus,
+      textarea:focus {
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Pseudo-classes Example</h1>
+    <p>
+      Move your mouse over the link, click on it, and try focusing on the input
+      field or textarea:
+    </p>
+    <a href="#">Click me</a>
+    <br />
+    <input type="text" placeholder="Type here" />
+    <br />
+    <textarea placeholder="Type here"></textarea>
+  </body>
+</html>
