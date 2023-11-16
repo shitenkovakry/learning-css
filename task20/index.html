@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Example</title>
+    <style>
+      #navigation {
+        float: left;
+        width: 200px;
+        background-color: #ccc;
+      }
+
+      #navigation2 {
+        float: right;
+        width: 200px;
+        background-color: #ddd;
+      }
+
+      #content {
+        margin: 0 200px;
+        background-color: #eee;
+      }
+
+      #footer {
+        clear: both;
+        background-color: #aaa;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="navigation2">
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1>Main Content Area</h1>
+      <p>
+        This is the main content of the page. It will fill the space to the
+        right and left of the navigation bars.
+      </p>
+    </div>
+
+    <div id="footer">
+      <p>Footer! Hoorah!</p>
+    </div>
+  </body>
+</html>
