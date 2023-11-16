@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo-elements</title>
+    <style>
+      blockquote {
+        font-style: italic;
+        position: relative;
+      }
+
+      blockquote:before {
+        content: open-quote;
+        position: absolute;
+        left: -10px;
+        top: -5px;
+        font-size: 1.5em;
+        color: #888;
+      }
+
+      blockquote:after {
+        content: close-quote;
+        position: absolute;
+        bottom: -5px;
+        right: -10px;
+        font-size: 1.5em;
+        color: #888;
+      }
+
+      li:before {
+        content: "POW! ";
+        background: red;
+        color: #fc0;
+      }
+
+      p:before {
+        content: url(1.png);
+        display: block;
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <blockquote>
+      <p>This is a quoted text.</p>
+    </blockquote>
+
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ul>
+
+    <p>This is a paragraph.</p>
+  </body>
+</html>
